@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar con Bootstrap</title>
+    <!-- Incluir CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/nav.css">
+</head>
+<body class="bg-primary">
+    <!-- Nav start --> 
+    <!-- Header Start --> 
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid px-xl-5 px-lg-3 py-4 mx-xl-3 mx-lg-1 my-2">
+                <a class="navbar-brand" href="#">
+                    <img id="imgLogo" class="header_logo left" src="../img/Group 1.svg">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto my-ul-class ml-auto">
+                        <li class="nav-item dropdown position-relative">
+                            <a class="nav-link link-services" href="#" id="navbarDropdown-services">
+                                Services 
+                                <img id="imgDropDownServices" src="../img/Control/downArrowWhite.png">
+                            </a>                            
+                        </li>
+                        <li class="nav-item mx-xl-4 mx-lg-0 mx-md-0 mx-sm-0">
+                            <a class="nav-link" href="./estimation_calculator.html">Case Studies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Estimation Calculator</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto px-xl-4 px-lg-0 px-md-0">
+                        <li class="nav-item dropdown mx-xl-3">
+                            <a class="nav-link link-company" href="#" id="navbarDropdown-company">
+                                Company 
+                                <img id="imgDropDownCompany" src="../img/Control/downArrowWhite.png">
+                            </a>
+                            <div class="dropdown-menu w-100" aria-labelledby="navbarDropdownCompany">
+                                <a class="dropdown-item" href="#">About Us</a>
+                                <a class="dropdown-item" href="#">Our Team</a>
+                                <a class="dropdown-item" href="#">History</a>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-xl-3 mx-lg-2 me-xl-4 me-lg-0 me-md-0 me-sm-2">
+                            <a class="nav-link" href="#">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header End --> 
+
+    <!-- DropDown Services Start --> 
+    <div class="dropdown-services container-fluid px-xl-3 px-lg-0 m-0 py-0" id="dropdown-services">
+        <div class="row px-xl-5 px-lg-0">
+            <div class="col-12 col-md-3 py-4 px-md-5">
+                <h1 class="fs-3">Services</h1>
+                <p class="fs-5 mb-4">Accelerate your vision with technologies that are both agile and cutting-edge.</p>
+                <a class="link-decoration fs-5" href="#">View all Services</a>
+            </div>
+            <div class="col-12 col-md-4 py-4 px-md-5">
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <a href="./services_product_engineering.html">
+                            <p class="px-4 fs-4 mb-lg-5 mb-md-2">Product Engineering</p>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <p class="px-4 fs-4 mb-lg-5 mb-md-2">Digital Commerce Solutions</p>
+                    </li>
+                    <li class="mb-3">
+                        <p class="px-4 fs-4 mb-lg-5 mb-md-2">Application Managed Services</p>
+                    </li>
+                    <li class="mb-3">
+                        <p class="px-4 fs-4 mb-lg-5 mb-md-2">Transformation &amp; Modernization</p>
+                    </li>
+                    <li class="mb-3">                        
+                        <p class="px-4 fs-4 mb-lg-5 mb-md-2">Application Management &amp; Development</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3 py-4 px-md-5">
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <p class="px-4 fs-4 mb-lg-5 mb-md-2">Agile</p>
+                    </li>
+                    <li class="mb-3">
+                        <p class="px-4 fs-4 mb-lg-5 mb-md-2">DevOps</p>
+                    </li>
+                    <li class="mb-3">
+                        <p class="px-4 fs-4 mb-lg-5 mb-md-2">API Management</p>
+                    </li>
+                    <li class="mb-3">
+                        <p class="px-4 fs-4 mb-lg-5 mb-md-2">Mobility Solutions</p>
+                    </li>
+                    <li class="mb-3">
+                        <p class="px-4 fs-4 mb-lg-5 mb-md-2">AI, Data &amp; Analytics</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-2 py-4 px-md-5">
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <p class="px-4 fs-4 mb-lg-5 mb-md-2">ERP</p>
+                    </li>
+                    <li class="mb-3">
+                        <p class="px-4 fs-4 mb-lg-5 mb-md-2">CRM</p>
+                    </li>
+                    <li class="mb-3">
+                        <p class="px-4 fs-4 mb-lg-5 mb-md-2">Cloud</p>
+                    </li>
+                    <li class="mb-3">
+                        <p class="px-4 fs-4 mb-lg-5 mb-md-2">Design</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- DropDown Services End --> 
+
+    <!-- DropDown Company Start --> 
+    <div class="dropdown-company container-fluid px-xl-3 px-lg-0 m-0 py-0" id="dropdown-company">
+        <div class="row px-xl-5 px-lg-0">
+            <div class="col-12 col-md-3 py-4 px-md-5">
+                <ul class="list-unstyled">
+                    <li>
+                        <p class="px-2 fs-4 mb-lg-2 mb-md-2">About us</p>
+                    </li>
+                </ul>
+                <p class="fs-5 mb-4">
+                    Our belief is in providing solutions, with a great work environment. Discover more about us.
+                </p>
+                <a class="link-decoration fs-5">About Us</a>
+            </div>
+            <div class="col-12 col-md-3 py-4 px-md-5">
+                <ul class="list-unstyled">
+                    <li>
+                        <p class="px-2 fs-4 mb-lg-2 mb-md-2">Careers</p>
+                    </li>
+                </ul>
+                <p class="fs-5 mb-4">
+                    Accelerate your career with us. Find about all the exciting opportunities you can get!
+                </p>
+                <a class="link-decoration fs-5">View Careers</a>
+            </div>
+            <div class="col-12 col-md-3 py-4 px-md-5">
+                <ul class="list-unstyled">
+                    <li>
+                        <p class="px-2 fs-4 mb-lg-2 mb-md-2">Life@Promact</p>
+                    </li>
+                </ul>
+                <p class="fs-5 mb-4">
+                    Apart from work, we also enjoy the life we have at Promact. Discover more with us.
+                </p>
+                <a class="link-decoration fs-5">Check us out</a>
+            </div>
+            <div class="col-12 col-md-3 py-4 px-md-5">
+                <ul class="list-unstyled">
+                    <li>
+                        <p class="px-2 fs-4 mb-lg-2 mb-md-2">Partnership</p>
+                    </li>
+                </ul>
+                <p class="fs-5 mb-4">
+                    Partner with us and let us handle everything from scratch.
+                </p>
+                <a class="link-decoration fs-5">Partner with us</a>
+            </div>
+        </div>
+    </div>
+    <!-- DropDown Company End --> 
+    <!-- Nav End --> 
+
+    <!-- Js Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JS DropDown Services -->
+    <script src="./js/dropDownServices.js"></script>
+
+    <!-- JS DropDown Company -->
+    <script src="./js/dropDownCompany.js"></script>
+</body>
+</html>

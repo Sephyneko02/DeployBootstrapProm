@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estimation_calculator_platform.css">
+    <link rel="stylesheet" href="../css/navGrey.css">
+    <link rel="stylesheet" href="../css/circle.css">
+    <link rel="stylesheet" href="../css/heroPromactians.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <title>Estimation Calculator</title>
+</head>
+<body>
+    <!-- Nav start --> 
+    <div class="container-fluid container_header px-0 mx-0">
+        <div class="container-fluid container_header_overlay px-0 mx-0">
+            <!-- Header Start --> 
+            <header class="container-fluid">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid px-xl-5 px-lg-3 py-4 mx-xl-3 mx-lg-1 my-2">
+                        <a class="navbar-brand" href="#">
+                            <img id="imgLogo" class="header_logo left" src="../img/MainLogo/mainLogoBlack.png">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav mx-auto my-ul-class ml-auto">
+                                <li class="nav-item dropdown position-relative">
+                                    <a class="nav-link link-services" href="#" id="navbarDropdown-services">
+                                        Services 
+                                        <img id="imgDropDownServices" src="../img/Control/downArrow.png">
+                                    </a>                            
+                                </li>
+                                <li class="nav-item mx-xl-4 mx-lg-0 mx-md-0 mx-sm-0">
+                                    <a class="nav-link" href="./estimation_calculator.html">Case Studies</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="link-bold nav-link" href="#">Estimation Calculator</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav ml-auto px-xl-4 px-lg-0 px-md-0">
+                                <li class="nav-item dropdown mx-xl-3">
+                                    <a class="nav-link link-company" href="#" id="navbarDropdown-company">
+                                        Company 
+                                        <img id="imgDropDownCompany" src="../img/Control/downArrow.png">
+                                    </a>
+                                    <div class="dropdown-menu w-100" aria-labelledby="navbarDropdownCompany">
+                                        <a class="dropdown-item" href="#">About Us</a>
+                                        <a class="dropdown-item" href="#">Our Team</a>
+                                        <a class="dropdown-item" href="#">History</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item mx-xl-3 mx-lg-2 me-xl-4 me-lg-0 me-md-0 me-sm-2">
+                                    <a class="nav-link" href="#">Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!-- Header End --> 
+
+            <!-- DropDown Services Start --> 
+            <div class="dropdown-services container-fluid px-xl-3 px-lg-0 m-0 py-0" id="dropdown-services">
+                <div class="row px-xl-5 px-lg-0">
+                    <div class="col-12 col-md-3 py-4 px-md-5">
+                        <h1 class="fs-3">Services</h1>
+                        <p class="fs-5 mb-4">Accelerate your vision with technologies that are both agile and cutting-edge.</p>
+                        <a class="link-decoration fs-5" href="#">View all Services</a>
+                    </div>
+                    <div class="col-12 col-md-4 py-4 px-md-5">
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <a href="./services_product_engineering.html">
+                                    <p class="px-4 fs-4 mb-lg-5 mb-md-2">Product Engineering</p>
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <p class="px-4 fs-4 mb-lg-5 mb-md-2">Digital Commerce Solutions</p>
+                            </li>
+                            <li class="mb-3">
+                                <p class="px-4 fs-4 mb-lg-5 mb-md-2">Application Managed Services</p>
+                            </li>
+                            <li class="mb-3">
+                                <p class="px-4 fs-4 mb-lg-5 mb-md-2">Transformation &amp; Modernization</p>
+                            </li>
+                            <li class="mb-3">                        
+                                <p class="px-4 fs-4 mb-lg-5 mb-md-2">Application Management &amp; Development</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-3 py-4 px-md-5">
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <p class="px-4 fs-4 mb-lg-5 mb-md-2">Agile</p>
+                            </li>
+                            <li class="mb-3">
+                                <p class="px-4 fs-4 mb-lg-5 mb-md-2">DevOps</p>
+                            </li>
+                            <li class="mb-3">
+                                <p class="px-4 fs-4 mb-lg-5 mb-md-2">API Management</p>
+                            </li>
+                            <li class="mb-3">
+                                <p class="px-4 fs-4 mb-lg-5 mb-md-2">Mobility Solutions</p>
+                            </li>
+                            <li class="mb-3">
+                                <p class="px-4 fs-4 mb-lg-5 mb-md-2">AI, Data &amp; Analytics</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-2 py-4 px-md-5">
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <p class="px-4 fs-4 mb-lg-5 mb-md-2">ERP</p>
+                            </li>
+                            <li class="mb-3">
+                                <p class="px-4 fs-4 mb-lg-5 mb-md-2">CRM</p>
+                            </li>
+                            <li class="mb-3">
+                                <p class="px-4 fs-4 mb-lg-5 mb-md-2">Cloud</p>
+                            </li>
+                            <li class="mb-3">
+                                <p class="px-4 fs-4 mb-lg-5 mb-md-2">Design</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- DropDown Services End --> 
+
+            <!-- DropDown Company Start --> 
+            <div class="dropdown-company container-fluid px-xl-3 px-lg-0 m-0 py-0" id="dropdown-company">
+                <div class="row px-xl-5 px-lg-0">
+                    <div class="col-12 col-md-3 py-4 px-md-5">
+                        <ul class="list-unstyled">
+                            <li>
+                                <p class="px-2 fs-4 mb-lg-2 mb-md-2">About us</p>
+                            </li>
+                        </ul>
+                        <p class="fs-5 mb-4">
+                            Our belief is in providing solutions, with a great work environment. Discover more about us.
+                        </p>
+                        <a class="link-decoration fs-5">About Us</a>
+                    </div>
+                    <div class="col-12 col-md-3 py-4 px-md-5">
+                        <ul class="list-unstyled">
+                            <li>
+                                <p class="px-2 fs-4 mb-lg-2 mb-md-2">Careers</p>
+                            </li>
+                        </ul>
+                        <p class="fs-5 mb-4">
+                            Accelerate your career with us. Find about all the exciting opportunities you can get!
+                        </p>
+                        <a class="link-decoration fs-5">View Careers</a>
+                    </div>
+                    <div class="col-12 col-md-3 py-4 px-md-5">
+                        <ul class="list-unstyled">
+                            <li>
+                                <p class="px-2 fs-4 mb-lg-2 mb-md-2">Life@Promact</p>
+                            </li>
+                        </ul>
+                        <p class="fs-5 mb-4">
+                            Apart from work, we also enjoy the life we have at Promact. Discover more with us.
+                        </p>
+                        <a class="link-decoration fs-5">Check us out</a>
+                    </div>
+                    <div class="col-12 col-md-3 py-4 px-md-5">
+                        <ul class="list-unstyled">
+                            <li>
+                                <p class="px-2 fs-4 mb-lg-2 mb-md-2">Partnership</p>
+                            </li>
+                        </ul>
+                        <p class="fs-5 mb-4">
+                            Partner with us and let us handle everything from scratch.
+                        </p>
+                        <a class="link-decoration fs-5">Partner with us</a>
+                    </div>
+                </div>
+            </div>
+            <!-- DropDown Company End --> 
+    </div>
+    <!-- Nav End --> 
+
+
+    <!-- Section Choose Platform Start -->
+    <section class="platform-content container py-5 mb-4">
+        <h2 class="pb-3">Choose Your Platform:</h2>
+        <p>
+            It’s a free tool to help you estimate ballpark time & costs needed to 
+            develop <br>
+            your future app. Get them just in several minutes!
+        </p>
+        <div class="row d-flex justify-content-center pb-5 mb-4 text-center">
+            <div class="col-xl-3 col-lg-4 col-md-5 col-sm-8">
+                <button class="active-platform btn btn-sm my-4 px-xl-4 px-lg-4 py-3">
+                    <a class="platform-link" href="./estimation_calculator_platform.html">Apple iOS</a>
+                </button>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-5 col-sm-8">
+                <button class="btn btn-sm my-4 px-xl-4 px-lg-4 py-3">
+                    <a class="platform-link" href="./estimation_calculator_platform.html">Android</a>
+                </button>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-5 col-sm-8">
+                <button class="btn btn-sm my-4 px-xl-4 px-lg-4 py-3">
+                    <a class="platform-link" href="./estimation_calculator_platform.html">Multi-Platform</a>
+                </button>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-5 col-sm-8">
+                <button class="btn btn-sm my-4 px-xl-4 px-lg-4 py-3">
+                    <a class="platform-link" href="./estimation_calculator_platform.html">Web</a>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Section Choose Platform End -->
+
+    <!-- Section Features/Calculator Start -->
+    <section class="calculator-content container pb-5 pt-0 mb-5 mt-0">
+        <div class="row">
+            <div class="col-12">
+                <h2>CHOOSE YOUR APP’S FEATURES</h2>
+            </div>
+            <!-- Features Start -->
+            <div class="col-12">
+                <h3 class="mt-4 mb-5">Admin Features</h3>
+            </div>
+            <div class="col-xl-7 col-lg-12">
+                <div class="row">
+                    <div class="col-xl-3 col-xl-6 col-md-12 w-lg-50 w-md-100">
+                        <div class="card-icon py-2 ps-4 d-flex align-items-center mb-4">
+                            <img src="../img/CalculatorIcons/Group 92.svg" class="mr-2 me-3">
+                            <p class="m-0">Custom Reporting</p>
+                        </div>                        
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 94.svg" class="mr-2 me-3">
+                            <p class="m-0">Custom User Administration</p>
+                        </div> 
+                    </div>
+                    
+                    <div class="col-xl-3 col-xl-6 col-md-12 w-lg-50 w-md-100">
+                        <div class="card-icon py-2 ps-4 d-flex align-items-center mb-4">
+                            <img src="../img/CalculatorIcons/Group 93.svg" class="mr-2 me-3">
+                            <p class="m-0">Ready-made Admin</p>
+                        </div>                        
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 95.svg" class="mr-2 me-3">
+                            <p class="m-0">Custom CMS</p>
+                        </div>    
+                    </div>
+
+                    <div class="col-12">
+                        <h3 class="mt-5 pt-3 mb-5">Content Generation</h3>
+                    </div>  
+                    <div class="col-xl-3 col-xl-6 col-md-12 w-lg-50 w-md-100">
+                        <div class="card-icon py-2 ps-4 d-flex align-items-center mb-4">
+                            <img src="../img/CalculatorIcons/Group 96.svg" class="mr-2 me-3">
+                            <p class="m-0">Content creation</p>
+                        </div>                        
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 99.svg" class="mr-2 me-3">
+                            <p class="m-0">Audio/Music Recording</p>
+                        </div> 
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 98.svg" class="mr-2 me-3">
+                            <p class="m-0">Camera / Video</p>
+                        </div>                        
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 102.svg" class="mr-2 me-3">
+                            <p class="m-0">Livestreaming</p>
+                        </div> 
+                    </div>
+
+                    <div class="col-xl-3 col-xl-6 col-md-12 w-lg-50 w-md-100">
+                        <div class="card-icon py-2 ps-4 d-flex align-items-center mb-4">
+                            <img src="../img/CalculatorIcons/Group 97.svg" class="mr-2 me-3">
+                            <p class="m-0">Camera / Photo</p>
+                        </div>                        
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 100.svg" class="mr-2 me-3">
+                            <p class="m-0">Forum</p>
+                        </div> 
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 101.svg" class="mr-2 me-3">
+                            <p class="m-0">Gallery - Photo / Video</p>
+                        </div> 
+                    </div>
+
+                </div>
+            </div>
+            <!-- Features End -->
+
+            <!-- Calculator Start -->
+            <div class="ms-xl-5 ms-lg-0 ps-xl-5 ps-lg-0 col-xl-4  col-lg-12">
+                <div class="card-team px-5 pt-5 pb-3 mb-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Platform: <span class="ms-4">Apple iOS</span></p>
+                        </div>
+
+                        <hr class="mt-2 mb-5">
+
+                        <div class="col-12">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td class="fw-lighter"><p>Title:</p></td>
+                                        <td class="text-end fw-lighter">Time:</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <hr class="mt-2 mb-5">
+
+                        <div class="col-12">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row"><p>Total:</p></th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><h6 class="fw-bold">Optimistic</h6></th>
+                                        <td class="text-end"><h6 class="fw-bold">0 hours</h6></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><h6 class="fw-bold">Pessimistic</h6></th>
+                                        <td class="text-end"><h6 class="fw-bold">0 hours</h6></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <hr class="mt-2">
+
+                        <div class="col-12 text-center">
+                            <button class="btn btn-sm my-4 rounded-5 px-4">
+                                <a class="calculate-link" href="./estimation_calculator_features.html">Calculate</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Calculator End -->
+        </div>
+
+        <div class="row">
+            <!-- Features Start -->
+            <div class="col-12">
+                <h3 class="pt-3 mb-5">Content Representation</h3>
+            </div>
+            <div class="col-xl-7 col-lg-12">
+                <div class="row">
+                    <div class="col-xl-3 col-xl-6 col-md-12 w-lg-50 w-md-100">
+                        <div class="card-icon py-2 ps-4 d-flex align-items-center mb-4">
+                            <img src="../img/CalculatorIcons/Group 108.svg" class="mr-2 me-3">
+                            <p class="m-0">Search</p>
+                        </div>                        
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 79.svg" class="mr-2 me-3">
+                            <p class="m-0">Machine-Learning Feed</p>
+                        </div> 
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 111.svg" class="mr-2 me-3">
+                            <p class="m-0">Maps view</p>
+                        </div>                        
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 113.svg" class="mr-2 me-3">
+                            <p class="m-0">Audio blog</p>
+                        </div> 
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 115.svg" class="mr-2 me-3">
+                            <p class="m-0">Video transcoding</p>
+                        </div> 
+                    </div>
+
+                    <div class="col-xl-3 col-xl-6 col-md-12 w-lg-50 w-md-100">
+                        <div class="card-icon py-2 ps-4 d-flex align-items-center mb-4">
+                            <img src="../img/CalculatorIcons/Group 109.svg" class="mr-2 me-3">
+                            <p class="m-0">Video blog</p>
+                        </div>                        
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 110.svg" class="mr-2 me-3">
+                            <p class="m-0">Music player</p>
+                        </div> 
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 112.svg" class="mr-2 me-3">
+                            <p class="m-0">GBlog</p>
+                        </div> 
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 114.svg" class="mr-2 me-3">
+                            <p class="m-0">Static Feed</p>
+                        </div> 
+                    </div>
+
+
+                    <div class="col-12">
+                        <h3 class="mt-5 pt-3 mb-5">E-Commerce</h3>
+                    </div>  
+                    <div class="col-xl-3 col-xl-6 col-md-12 w-lg-50 w-md-100">
+                        <div class="card-icon py-2 ps-4 d-flex align-items-center mb-4">
+                            <img src="../img/CalculatorIcons/Group 123.svg" class="mr-2 me-3">
+                            <p class="m-0">Order management</p>
+                        </div>                        
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 125.svg" class="mr-2 me-3">
+                            <p class="m-0">Ads integration</p>
+                        </div> 
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 127.svg" class="mr-2 me-3">
+                            <p class="m-0">Shopping cart</p>
+                        </div>                        
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 129.svg" class="mr-2 me-3">
+                            <p class="m-0">Barcodes</p>
+                        </div> 
+                    </div>
+
+                    <div class="col-xl-3 col-xl-6 col-md-12 w-lg-50 w-md-100">
+                        <div class="card-icon py-2 ps-4 d-flex align-items-center mb-4">
+                            <img src="../img/CalculatorIcons/Group 124.svg" class="mr-2 me-3">
+                            <p class="m-0">QR Code</p>
+                        </div>                        
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 126.svg" class="mr-2 me-3">
+                            <p class="m-0">Internal wallet</p>
+                        </div> 
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 128.svg" class="mr-2 me-3">
+                            <p class="m-0">Checkout flow</p>
+                        </div> 
+                    </div>
+
+
+
+                    <div class="col-12">
+                        <h3 class="mt-5 pt-3 mb-5">Integrations</h3>
+                    </div>  
+                    <div class="col-xl-3 col-xl-6 col-md-12 w-lg-50 w-md-100">
+                        <div class="card-icon py-2 ps-4 d-flex align-items-center mb-4">
+                            <img src="../img/CalculatorIcons/Group 136.svg" class="mr-2 me-3">
+                            <p class="m-0">Shopify integration</p>
+                        </div>                        
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 138.svg" class="mr-2 me-3">
+                            <p class="m-0">SMS service</p>
+                        </div> 
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 140.svg" class="mr-2 me-3">
+                            <p class="m-0">Calendar Integration</p>
+                        </div>                        
+                    </div>
+
+                    <div class="col-xl-3 col-xl-6 col-md-12 w-lg-50 w-md-100">
+                        <div class="card-icon py-2 ps-4 d-flex align-items-center mb-4">
+                            <img src="../img/CalculatorIcons/Group 137.svg" class="mr-2 me-3">
+                            <p class="m-0">Paypal/Stripe/… integration</p>
+                        </div>                        
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 139.svg" class="mr-2 me-3">
+                            <p class="m-0">Crashlytics</p>
+                        </div> 
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 141.svg" class="mr-2 me-3">
+                            <p class="m-0">Analytic tools integration</p>
+                        </div> 
+                    </div>
+
+
+                    <div class="col-12">
+                        <h3 class="mt-5 pt-3 mb-5">Other</h3>
+                    </div>  
+                    <div class="col-xl-3 col-xl-6 col-md-12 w-lg-50 w-md-100">
+                        <div class="card-icon py-2 ps-4 d-flex align-items-center mb-4">
+                            <img src="../img/CalculatorIcons/Group 149.svg" class="mr-2 me-3">
+                            <p class="m-0">Navigation</p>
+                        </div>                        
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 151.svg" class="mr-2 me-3">
+                            <p class="m-0">Real-time events</p>
+                        </div> 
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 153.svg" class="mr-2 me-3">
+                            <p class="m-0">CRUD operations</p>
+                        </div>                        
+                    </div>
+
+                    <div class="col-xl-3 col-xl-6 col-md-12 w-lg-50 w-md-100">
+                        <div class="card-icon py-2 ps-4 d-flex align-items-center mb-4">
+                            <img src="../img/CalculatorIcons/Group 150.svg" class="mr-2 me-3">
+                            <p class="m-0">Landing page</p>
+                        </div>                        
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 152.svg" class="mr-2 me-3">
+                            <p class="m-0">Scheduling events</p>
+                        </div> 
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 154.svg" class="mr-2 me-3">
+                            <p class="m-0">GeoLocation</p>
+                        </div> 
+                    </div>
+
+
+
+                    <div class="col-12">
+                        <h3 class="mt-5 pt-3 mb-5">Security</h3>
+                    </div>  
+                    <div class="col-xl-3 col-xl-6 col-md-12 w-lg-50 w-md-100">
+                        <div class="card-icon py-2 ps-4 d-flex align-items-center mb-4">
+                            <img src="../img/CalculatorIcons/Group 161.svg" class="mr-2 me-3">
+                            <p class="m-0">WAF</p>
+                        </div>                        
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 162.svg" class="mr-2 me-3">
+                            <p class="m-0">VPN</p>
+                        </div> 
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 164.svg" class="mr-2 me-3">
+                            <p class="m-0">SSL Certificate Security Level</p>
+                        </div>                        
+                    </div>
+
+                    <div class="col-xl-3 col-xl-6 col-md-12 w-lg-50 w-md-100">
+                        <div class="card-icon py-2 ps-4 d-flex align-items-center mb-4">
+                            <img src="../img/CalculatorIcons/Group 177.svg" class="mr-2 me-3">
+                            <p class="m-0">Two-Factor Authentication</p>
+                        </div>                        
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 163.svg" class="mr-2 me-3">
+                            <p class="m-0">CloudFlare</p>
+                        </div> 
+                    </div>
+
+
+
+                    <div class="col-12">
+                        <h3 class="mt-5 pt-3 mb-5">Social networks & Engagement</h3>
+                    </div>  
+                    <div class="col-xl-3 col-xl-6 col-md-12 w-lg-50 w-md-100">
+                        <div class="card-icon py-2 ps-4 d-flex align-items-center mb-4">
+                            <img src="../img/CalculatorIcons/Group 176.svg" class="mr-2 me-3">
+                            <p class="m-0">Referrals</p>
+                        </div>                        
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 179.svg" class="mr-2 me-3">
+                            <p class="m-0">Rewards</p>
+                        </div> 
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 181.svg" class="mr-2 me-3">
+                            <p class="m-0">Rating System</p>
+                        </div>      
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 183.svg" class="mr-2 me-3">
+                            <p class="m-0">Follow/unfollow</p>
+                        </div>                        
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 186.svg" class="mr-2 me-3">
+                            <p class="m-0">Sending custom emails</p>
+                        </div> 
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 188.svg" class="mr-2 me-3">
+                            <p class="m-0">Chat</p>
+                        </div>                    
+                    </div>
+
+                    <div class="col-xl-3 col-xl-6 col-md-12 w-lg-50 w-md-100">
+                        <div class="card-icon py-2 ps-4 d-flex align-items-center mb-4">
+                            <img src="../img/CalculatorIcons/Group 178.svg" class="mr-2 me-3">
+                            <p class="m-0">In-app notifications</p>
+                        </div>                        
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 180.svg" class="mr-2 me-3">
+                            <p class="m-0">User Comments</p>
+                        </div> 
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 182.svg" class="mr-2 me-3">
+                            <p class="m-0">Block/report user or content</p>
+                        </div>                        
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 185.svg" class="mr-2 me-3">
+                            <p class="m-0">User Likes</p>
+                        </div> 
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 187.svg" class="mr-2 me-3">
+                            <p class="m-0">Social Sharing</p>
+                        </div>                        
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 189.svg" class="mr-2 me-3">
+                            <p class="m-0">Push Notifications</p>
+                        </div> 
+                    </div>
+
+
+
+                    <div class="col-12">
+                        <h3 class="mt-5 pt-3 mb-5">Users & Accounts</h3>
+                    </div>  
+                    <div class="col-xl-3 col-xl-6 col-md-12 w-lg-50 w-md-100">
+                        <div class="card-icon py-2 ps-4 d-flex align-items-center mb-4">
+                            <img src="../img/CalculatorIcons/Group 203.svg" class="mr-2 me-3">
+                            <p class="m-0">Steam Login</p>
+                        </div>                        
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 205.svg" class="mr-2 me-3">
+                            <p class="m-0">Contacts Access</p>
+                        </div> 
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 207.svg" class="mr-2 me-3">
+                            <p class="m-0">Google Login</p>
+                        </div>      
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 209.svg" class="mr-2 me-3">
+                            <p class="m-0">User Profiles</p>
+                        </div>                        
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 211.svg" class="mr-2 me-3">
+                            <p class="m-0">Privacy policy & terms of use</p>
+                        </div> 
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 213.svg" class="mr-2 me-3">
+                            <p class="m-0">Apple ID Login</p>
+                        </div>       
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 215.svg" class="mr-2 me-3">
+                            <p class="m-0">E-mail Login</p>
+                        </div>                 
+                    </div>
+
+                    <div class="col-xl-3 col-xl-6 col-md-12 w-lg-50 w-md-100">
+                        <div class="card-icon py-2 ps-4 d-flex align-items-center mb-4">
+                            <img src="../img/CalculatorIcons/Group 204.svg" class="mr-2 me-3">
+                            <p class="m-0">User Profile Settings</p>
+                        </div>                        
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 206.svg" class="mr-2 me-3">
+                            <p class="m-0">Multi language</p>
+                        </div> 
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 208.svg" class="mr-2 me-3">
+                            <p class="m-0">Social Login</p>
+                        </div>                        
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 210.svg" class="mr-2 me-3">
+                            <p class="m-0">Contact Info</p>
+                        </div> 
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 212.svg" class="mr-2 me-3">
+                            <p class="m-0">Support chat</p>
+                        </div>                        
+                        <div class="card-icon p-2 ps-4 d-flex align-items-center my-4">
+                            <img src="../img/CalculatorIcons/Group 214.svg" class="mr-2 me-3">
+                            <p class="m-0">Onboarding</p>
+                        </div> 
+                    </div>
+
+                </div>
+            </div>
+            <!-- Features End -->
+
+            <!-- Card Team Start -->
+            <div class="ms-xl-5 ms-lg-0 ps-xl-5 ps-lg-0 col-xl-4 col-lg-12">
+                <div class="card-team px-5 pt-5 pb-3 mb-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="fw-bold text-center">YOUR TEAM</h4>
+                        </div>
+                        <hr class="mt-2 mb-5">
+                        <div class="col-12">
+                            <ul class="p-0 m-0">
+                                <li class="px-2 mb-3">Business Analyst</li>
+                                <li class="px-2 my-3">UI/UX Designer</li>
+                                <li class="px-2 my-3">Mobile Developer</li>
+                                <li class="px-2 my-3">Front-end Developer</li>
+                                <li class="px-2 my-3">Back-end Developer</li>
+                                <li class="px-2 my-3">Tech lead</li>
+                                <li class="px-2 my-3">Project Manager</li>
+                                <li class="px-2 my-3">QA</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card Team End -->
+        </div>
+    </section>
+    <!-- Section Features/Calculator End -->
+
+    <!-- Section Hero Promactians Start -->
+    <section class="promactians-content d-flex align-items-center justify-content-center text-center">
+        <div class="container">
+            <h2 class="text-white mt-3 mb-4">We are a family of <span>Promactians</span></h2>
+            <p class="mb-0 pb-0">
+                We are an excellence driven company with a passion for technology <br>
+                where people love what they do.
+            </p>
+        </div>
+    </section>
+    <!-- Section Hero Promactians End -->
+
+    <!-- ------- Section Footer Start ---------- -->
+    <section class="feature-section pt-80 text-center p-lg-5 p-md-3 p-sm-3">
+        <div class="container py-5 mx-1 mx-auto">
+        <div class="row justify-content-center px-lg-5 p-sm-0 my-lg-5 m-sm-0">
+
+            <div class="content-feature col-lg-6 col-sm-12 px-5 p-sm-0 my-lg-5 my-sm-0 pe-lg-5 pe-md-0">
+                <div class="p-lg-0 p-sm-0">
+                    <h2>What can we help you</h2>
+                    <h2>achieve?</h2>
+                    <button class="feature-section-btn btn btn-sm my-3 rounded-5 px-5 py-lg-2 py-md-0 py-sm-2">Talk to Us!</button>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 px-5 my-5 p-sm-0 ps-lg-5 ps-md-0">
+                <div class="p-lg-0 p-sm-0">
+                    <h2>Where will your career</h2>
+                    <h2>take you?</h2>
+                    <button class="feature-section-btn btn btn-sm my-3 rounded-5 px-5 py-lg-2 py-md-0 py-sm-2">Find Out Now!</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer class="container-fluid px-lg-5 px-md-0 px-sm-0 text-sm-center">
+        <div class="container-fluid px-lg-5 px-md-0 px-sm-0">
+            <div class="row justify-content-center align-items-center pt-4 pb-2 me-lg-4 me-md-0 me-sm-0 px-lg-1 px-md-0 px-sm-0">
+                <div class="col-lg-3 col-md-12 col-sm-12 text-lg-start text-md-center text-sm-center text-center">
+                    <p>© Promact Infotech Pvt. Ltd.</p>
+                </div>
+                <div class="col-lg-9 d-lg-flex d-md-block d-sm-block justify-content-end col-md-12 col-sm-12 text-lg-end text-md-center text-sm-center text-center">
+                    <ul class="list-inline pe-lg-5 pe-md-0 pe-sm-0">
+                        <li class="list-inline-item ms-md-0 ms-sm-0"><a href="#">Contact us</a></li>
+                        <li class="list-inline-item ms-lg-4 ms-md-0 ms-sm-0"><a href="#">Privacy Policy</a></li>
+                        <li class="list-inline-item ms-lg-4 ms-md-0 ms-sm-0"><a href="#">Sitemap</a></li>
+                    </ul>
+                    <ul class="list-inline">
+                        <li class="list-inline-item ms-lg-0">
+                            <a href="#">
+                                <img src="../img/Group 315.svg">
+                            </a>
+                        </li>
+                        <li class="list-inline-item ms-lg-2 ms-md-0 ms-sm-0">
+                            <a href="#">
+                                <img src="../img/Group 316.svg">
+                            </a>
+                        </li>
+                        <li class="list-inline-item ms-lg-2 ms-md-0 ms-sm-0">
+                            <a href="#">
+                            <img src="../img/Group 312.svg">
+                            </a>
+                        </li>
+                        <li class="list-inline-item ms-lg-2 ms-md-0 ms-sm-0">
+                            <a href="#">
+                                <img src="../img/Group 318.svg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ------- Section Footer End ---------- -->
+
+    <!-- Js Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JS DropDown Navigator -->
+    <script src="../js/dropDownNavGrey.js"></script>
+</body>
+</html>
