@@ -224,6 +224,9 @@ td, th {
     .aplication-content h1{
         font-size: 45px;
     }
+    .aplication-content h2{
+        font-size: 30px;
+    }
 }
 @media (max-width: 576px) {
     .article_aplication {
@@ -233,6 +236,9 @@ td, th {
     .content-social img{
         width: 60px;
         height: 60px;
+    }
+    .aplication-content h1{
+        font-size: 35px;
     }
 }
 /*******Section Offices/Contact End*****/

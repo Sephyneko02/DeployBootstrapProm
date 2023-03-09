@@ -133,6 +133,9 @@ input[type="file"] {
     line-height: 70px;
 }
 
-
-
+@media (max-width: 769px) {
+    .budget-content{
+        width: 100%!important;
+    }
+}
 /*******Section Form Contact End*****/

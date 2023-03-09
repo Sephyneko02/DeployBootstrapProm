@@ -383,6 +383,9 @@ body{
     .info-content h1{
         font-size: 45px;
     }
+    .info-content h2{
+        font-size: 65px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -408,7 +411,7 @@ body{
 
 @media (max-width:1000px) {
     .spacer-bg h2{
-        font-size: 40px;
+        font-size: 35px;
     }
 }
 /******** Spacer End ********/

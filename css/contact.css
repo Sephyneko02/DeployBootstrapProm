@@ -73,6 +73,15 @@ body{
     opacity: 1;
 }
 
+.link-button{
+    font-size: 21px;
+    color: var(--text-color)
+}
+
+.link-button:hover{
+    color: var(--text-color)
+}
+
 @media (max-width: 1000px) {
     .layout_text_h1{
         font-size:  45px;
